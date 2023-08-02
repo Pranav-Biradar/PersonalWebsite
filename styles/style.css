@@ -1,0 +1,733 @@
+@font-face {
+    font-family: Playfair Display;
+    src: url(../Resources/Fonts/PlayfairDisplay-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Hanuman;
+    src: url(../Resources/Fonts/Hanuman-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanuman';
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html{
+    font-size: 100%;
+}
+
+:root {
+    --main-color: #FDC435;
+    --second-main-color: #dcd3d3; 
+    --h1-color: #25282B;
+    --text-color: #828282;
+    --h2-font: 2.5rem;
+    --h3-font: 2rem;
+    --text-font: 1.25rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 3.75rem;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 2.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo{
+    width: 12rem;
+    height: 100%;
+    background-image: url("../Resources/Images/logo.svg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.menu-btn{
+    width: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+#menu{
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+
+#home-btn{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.btn3{
+    border: 2px solid black;
+    padding: 5px 1rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: var(--h1-color);
+    font-family: 'Playfair Display';
+}
+
+
+.button {
+    width: 35rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    border: 2px solid black;
+    padding: .5rem 1.25rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: var(--h1-color);
+    font-family: 'Playfair Display';
+
+}
+
+a {
+    font-family: 'Playfair Display';
+    color: var(--h1-color);
+    /* font-size: 1.125rem; */
+}
+
+#btnid {
+    background-color: var(--second-main-color);
+}
+
+section{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* home section */
+
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 7.5rem;
+    background-color: var(--second-main-color);
+}
+
+.intro {
+    max-width: 32rem;
+    margin-left: 8rem;
+    /* height: 408px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro h1{
+    font-size: 3.5rem;
+    font-family: 'Hanuman';
+    font-weight: bolder;
+}
+
+.intro .description{
+    font-size: 1rem;
+    /* color: var(--text-color); */
+    text-shadow: 2px 1px 5px var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+    /* margin-bottom: 32px; */
+    line-height: 1.5rem;
+}
+
+.buttons {
+    margin: 1rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+#btn2 a {
+    background-color: var(--main-color);
+}
+
+.img img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 2.5rem;
+}
+
+/* about section */
+/* .about {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.heading {
+    text-align: center;
+    font-size: var(--h2-font);
+    font-weight: bold;
+    font-family: 'Hanuman';
+    text-decoration: underline;
+    text-decoration-color: var(--main-color);
+}
+
+.aboutcontent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    /* height: 34rem; */
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+.aboutpara {
+    max-width: 50%;
+    
+}
+.aboutpara p{
+    font-size: var(--text-font);
+    font-weight: 400;
+    line-height: 2.25rem;
+    font-family: 'Hanuman';
+}
+
+.projectcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1.25rem;
+}
+
+.cards {
+    width: 25rem;
+    height: 37.5rem;
+    background-color: var(--second-main-color);
+    margin: 2.5rem;
+    border-radius: 1.5rem;
+}
+
+.image {
+    width: 100%;
+    height: 45%;
+    background-color: var(--main-color);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.maincontent {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15% 10%;
+    gap: 1rem;
+}
+
+.title {
+    font-size: var(--h3-font);
+}
+
+.des {
+    font-size: var(--text-font);
+    font-weight: 300;
+}
+.maincontent .btn2{
+    width: 10rem;
+    border-radius: 3rem;
+    text-align: center;
+}
+
+/* .pbtn a {
+    color: var(--h1-color);
+    text-decoration: none;
+    padding: 8px 24px;
+    background-color: var(--main-color);
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: bold;
+} */
+
+
+
+/* .Feedback .rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+} */
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-main-color);
+    width: 37.5rem;
+    /* height: 600px; */
+    border-radius: 2rem;
+    margin-top: 3rem;
+    padding: 2rem .6rem;
+}
+
+form {
+    width: 90%;
+}
+/* 
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+    
+} */
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid white;
+    color: var(--text-color);
+    font-size: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+#submitbtn{
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 20%;
+    height: 100%;
+    font-size: 1rem;
+}
+/* .Send {
+    text-align: center;
+} */
+
+/* button {
+    padding: 8px 24px;
+    color: black;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #FDC435;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+} */
+
+
+.Contactbox {
+    width: 50rem;
+    height: 30rem;
+    margin: 4rem 0;
+    display: flex;
+    border-radius: 1.5rem;
+}
+
+.contactinfo {
+    width: 55%;
+    background-color: var(--second-main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.map {
+    width: 45%;
+    background-color: var(--main-color);
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.map-img{
+    width: 97%;
+    height: 98%;
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    background-image: url("../Resources/Images/map.svg");
+    background-position: center;
+    background-size: cover;
+    margin: .3rem;
+}
+
+.contacticon {
+    width: 70%;
+    padding: .8rem 0;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.icons {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.contacticon p {
+    font-size: var(--text-font);
+    color: var(--text-color);
+}
+
+.contacticon span{
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--main-color);
+    padding: .8rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: .5px solid black;
+    align-items: center;
+}
+
+.footer {
+    height: 5rem;
+    background-color: black;
+}
+
+.footerinfo {
+    padding-top: 1rem;
+}
+
+.footerinfo p {
+    font-size: 1rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.footerinfo span{
+    color: red;
+    font-size: 1.25rem;
+}
+
+@media screen and (min-width:991px) and (max-width:1200px){
+    html{
+        font-size: 75%;
+    }
+    .intro{
+        margin-left: 6rem;
+    }
+    #home-img{
+        width: 40rem;
+        height: 40rem;
+    }
+    .intro h1{
+        font-size: 4rem;
+    }
+    
+    .intro .description{
+        font-size: 1.125rem;
+    }
+    
+    .intro p {
+        font-size: 1.075rem;
+    }
+    .navbar{
+        height: 4.5rem;
+    }
+    a{
+        font-size: 1.1rem;
+    }
+    .button{
+        width: 36rem;
+    }
+}
+
+@media screen and (min-device-width:768px) and (max-device-width:991px){ /*    */
+    html{
+        font-size: 60%;
+    }
+    #home{
+        gap: 5rem;
+    }
+    .intro{
+        margin-left: 5rem;
+        margin-bottom: 5rem;
+    }
+    #home-img{
+        width: 40rem;
+        height: 40rem;
+        margin-bottom: 5rem;
+
+    }
+    .intro h1{
+        font-size: 4.3rem;
+    }
+    
+    .intro .description{
+        font-size: 1.25rem;
+    }
+    
+    .intro p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .navbar{
+        height: 5.5rem;
+        padding: 0.25rem 2rem;
+    }
+    .logo{
+        width: 14rem;
+    }
+    .button{
+        width: 37rem;
+    }
+    .btn{
+        padding: .7rem 1.25rem;
+    }
+    a{
+        font-size: 1.125rem;
+    }
+    section{
+        padding-top: 8rem;
+    }
+}
+
+@media screen and (min-device-width:580px) and (max-device-width:768px){
+    html{
+        font-size: 55%;
+    }
+    #home{
+        gap: 1.5rem;
+    }
+    .intro{
+        margin-left: 4rem;
+        margin-bottom: 4rem;
+    }
+    #home-img{
+        margin-bottom: 10rem;
+    }
+    .intro h1{
+        font-size: 4.4rem;
+        font-weight: bold;
+    }
+    
+    .intro .description{
+        font-size: 1.275rem;
+    }
+    
+    .intro p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .navbar{
+        height: 5.75rem;
+        padding: 0.25rem 1rem;
+    }
+    .logo{
+        width: 14rem;
+    }
+    .button{
+        width: 37rem;
+    }
+    .btn{
+        padding: .7rem 1rem;
+    }
+    a{
+        font-size: 1.175rem;
+    }
+    section{
+        padding-top: 8rem;
+    }
+    .aboutpara p{
+        line-height: 1.8rem;
+    }
+    .form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-device-width:580px){
+    html{
+        font-size: 52%;
+    }
+    #home{
+        flex-direction: column-reverse;
+        padding-top: 0rem;
+        justify-content: center;
+        gap: 16px;
+    }
+    #home-img{
+        margin-bottom: 0;
+        height: 35rem;
+        width: 35rem;
+    }
+    .intro{
+        margin-left: 0rem;
+        max-width: 60%;
+    }
+    .intro h1{
+        font-size: 5rem;
+        font-weight: bold;
+    }
+    
+    .intro .description{
+        font-size: 1.5rem;
+    }
+    
+    .intro p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .navbar{
+        height: 5.75rem;
+        padding: 0.25rem 1rem;
+    }
+    .logo{
+        width: 14rem;
+    }
+    .button{
+        width: 36rem;
+    }
+    .btn{
+        padding: .7rem 1rem;
+    }
+    a{
+        font-size: 1.175rem;
+    }
+    section{
+        padding-top: 8rem;
+    }
+    .aboutcontent{
+        flex-direction: column;
+    }
+    .aboutpara{
+        max-width: 70%;
+    }
+    .aboutpara p{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #about-img{
+        height: 25rem;
+        width: 25rem;
+        box-shadow: 4px 3px 10px var(--main-color), -2px -2px 12px var(--main-color);
+    }
+    .form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-device-width:480px){
+    html{
+        font-size: 40%;
+    }
+    .navbar{
+        padding: .25rem 2rem;
+        height: 6.5rem;
+    }
+    .menu-btn{
+        display: block;
+        margin-right: 1rem;
+    }
+    #menu{
+        width: 2rem;
+        height: 100%;
+    }
+    .button{
+        position: absolute;
+        width: 50%;
+        background-color: var(--main-color);
+        top: 0;
+        left: -500px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .button .btn{
+        /* display: block; */
+        width: 80px;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    #home-img{
+        margin-bottom: 0;
+        margin-left: 4rem;
+        height: 40rem;
+        width: 40rem;
+    }
+    .intro{
+        margin-left: 0rem;
+        max-width: 75%;
+        text-align: center;
+        gap: 1rem;
+    }
+    .intro h1{
+        font-size: 6rem;
+        font-weight: bold;
+    }
+    
+    .intro .description{
+        font-size: 1.75rem;
+    }
+    
+    .intro p {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+    .buttons{
+        justify-content: center;
+    }
+    .buttons a{
+        font-size: 1.5rem;
+    }
+    .aboutcontent{
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 5rem;
+    }
+    .aboutpara p{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .aboutpara{
+        max-width: 72%;
+    }
+    .projectcards{
+        margin-top: 2rem;
+    }
+    .cards{
+        width: 30rem;
+    }
+}
+
+
+
+
+
