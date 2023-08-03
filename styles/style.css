@@ -48,10 +48,9 @@ html{
 .logo{
     width: 12rem;
     height: 100%;
-    background-image: url("../Resources/Images/logo.svg");
     background-size: cover;
     background-position: center;
-    
+    margin-top: .5rem;
 }
 
 .menu-btn{
@@ -176,13 +175,6 @@ section{
 }
 
 /* about section */
-/* .about {
-    padding-top: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
 
 .heading {
     text-align: center;
@@ -263,25 +255,6 @@ section{
     text-align: center;
 }
 
-/* .pbtn a {
-    color: var(--h1-color);
-    text-decoration: none;
-    padding: 8px 24px;
-    background-color: var(--main-color);
-    border-radius: 24px;
-    font-size: 16px;
-    font-weight: bold;
-} */
-
-
-
-/* .Feedback .rectangle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-} */
-
 .form {
     display: flex;
     align-items: center;
@@ -297,12 +270,6 @@ section{
 form {
     width: 90%;
 }
-/* 
-.input-group {
-    margin-bottom: 30px;
-    position: relative;
-    
-} */
 
 input,
 textarea {
@@ -328,23 +295,6 @@ button{
     height: 100%;
     font-size: 1rem;
 }
-/* .Send {
-    text-align: center;
-} */
-
-/* button {
-    padding: 8px 24px;
-    color: black;
-    width: 200px;
-    height: 50px;
-    border-radius: 20px;
-    cursor: pointer;
-    background-color: #FDC435;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-} */
-
 
 .Contactbox {
     width: 50rem;
@@ -547,7 +497,7 @@ button{
         padding: 0.25rem 1rem;
     }
     .logo{
-        width: 14rem;
+        width: 16rem;
     }
     .button{
         width: 37rem;
@@ -606,7 +556,7 @@ button{
         padding: 0.25rem 1rem;
     }
     .logo{
-        width: 14rem;
+        width: 15rem;
     }
     .button{
         width: 36rem;
@@ -649,7 +599,7 @@ button{
         height: 6.5rem;
     }
     .menu-btn{
-        display: block;
+        display: initial;
         margin-right: 1rem;
     }
     #menu{
@@ -666,6 +616,9 @@ button{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+    .button.active{
+        left: 0px;
     }
     .button .btn{
         /* display: block; */
